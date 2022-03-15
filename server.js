@@ -22,7 +22,7 @@ const propertyController = require("./controllers/PropertyController.js");
 
 const app = express();
 
-var allowList = ['http://localhost:3001', 'https://romantic-khorana-851dc8.netlify.app/']
+var allowList = ['http://localhost:3001', 'https://bairbnb.netlify.app']
 const corsOptionsDelegate = function (req, callback) {
   var corsOptions;
   if (allowList.indexOf(req.header('Origin')) !== -1) {
